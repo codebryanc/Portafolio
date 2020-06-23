@@ -1,14 +1,16 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 
+import { InfoPagina } from '../interfaces/info-pagina.interface';
+
 @Injectable({
   providedIn: 'root'
 })
 export class InfoPaginaService {
 
   // Variables
-  private info: any = {};
-  private cargada: boolean = false;
+  public info: InfoPagina = new InfoPagina();
+  public cargada: boolean = false;
 
   // Constants
 
@@ -19,10 +21,15 @@ export class InfoPaginaService {
   // Methods
   public readJsonFile() {
     this.http.get('assets/data/data-pagina.json')
-      .subscribe((resp: any) => {
+      .subscribe((resp: InfoPagina) => {
+
         this.cargada = true;
+        
         this.info = resp;
+        
         console.log(resp['twitter']);
+        
+        let facebookProp = resp.facebook;
       });
   }
 
