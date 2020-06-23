@@ -43,9 +43,7 @@ body {
   z-index: 1;
   position: static;
 }
-.top-fixed .rk-main {
-  padding-top: 8.5rem;
-}
+
 @media (min-width: 64em) {
   .rk-main {
     position: relative;
