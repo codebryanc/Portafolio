@@ -18,11 +18,15 @@ export class ProductosService {
   private cargarProductos() {
     this.http.get('https://udemyangular-38e59.firebaseio.com/productos_idx.json')
       .subscribe((resp: ProductoFirebase[]) => {
-        this.cargando = false;
         
         this.productos = resp;
-
+        
         console.log(resp);
+        
+        // for view loading
+        setTimeout(() => {
+          this.cargando = false;
+        }, 250);
       });
   }
 }
