@@ -20,9 +20,7 @@ export class ProductosService {
       .subscribe((resp: ProductoFirebase[]) => {
         
         this.productos = resp;
-        
-        console.log(resp);
-        
+                
         // for view loading
         setTimeout(() => {
           this.cargando = false;

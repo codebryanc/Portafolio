@@ -48,8 +48,6 @@ export class InfoPaginaService {
         this.cargadoEquipo = true;
 
         this.equipo = resp;
-
-        console.log(resp);
     });
   }
 }

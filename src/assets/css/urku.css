@@ -1163,72 +1163,24 @@ body {
   padding-top: 100%;
 }
 
-.item-1 {
-  background-image: url("../img/project-1.jpg");
-}
 @media (min-width: 40em) {
   #layout-grid:checked ~ .rk-portfolio .item-1 {
     background-position: center left;
   }
 }
 
-.item-2 {
-  background-image: url("../img/project-2.jpg");
-}
-
-.item-3 {
-  background-image: url("../img/project-3.jpg");
-}
-
-.item-4 {
-  background-image: url("../img/project-4.jpg");
-}
-
-.item-5 {
-  background-image: url("../img/project-5.jpg");
-}
 @media (min-width: 40em) {
   #layout-grid:checked ~ .rk-portfolio .item-5 {
     background-position: center left;
   }
 }
 
-.item-6 {
-  background-image: url("../img/project-6.jpg");
-}
 @media (min-width: 40em) {
   #layout-grid:checked ~ .rk-portfolio .item-6 {
     background-position: top center;
   }
 }
 
-.item-7 {
-  background-image: url("../img/project-7.jpg");
-}
-
-.item-8 {
-  background-image: url("../img/project-8.jpg");
-}
-
-.item-9 {
-  background-image: url("../img/project-9.jpg");
-}
-
-.item-10 {
-  background-image: url("../img/project-10.jpg");
-}
-
-.item-11 {
-  background-image: url("../img/project-11.jpg");
-}
-
-.item-12 {
-  background-image: url("../img/project-12.jpg");
-}
-
-.item-13 {
-  background-image: url("../img/project-13.jpg");
-}
 @media (min-width: 40em) {
   #layout-grid:checked ~ .rk-portfolio .item-13 {
     background-position: top right;
@@ -1238,13 +1190,6 @@ body {
   }
 }
 
-.item-14 {
-  background-image: url("../img/project-14.jpg");
-}
-
-.item-15 {
-  background-image: url("../img/project-15.jpg");
-}
 
 @media (min-width: 40em) {
   #layout-grid:checked ~ .rk-portfolio .rk-items-cont {
@@ -1348,15 +1293,16 @@ body {
 }
 
 .item-inside-1 {
-  background-image: url("../img/project-1.jpg");
   background-position: 50% 100%;
   background-size: 350%;
 }
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
   .item-inside-1 {
     background-image: url("../img/project-1h.jpg");
   }
 }
+
 @media (min-width: 40em) {
   .item-inside-1 {
     background-size: 150%;

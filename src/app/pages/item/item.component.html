@@ -1,8 +1,8 @@
 <section class="ae-container-fluid--full" *ngIf="currentItem">
-    <header class="rk-portfolio-cover  item-inside-1">
+    <header class="rk-portfolio-cover item-inside-1" [ngStyle]="{'background-image': 'url(assets/productos/' + id + '/main.jpg)'}">
         <div class="item-inside__meta">
-            <h1 class="ae-u-bolder rk-portfolio-title ">{{currentItem?.producto}}</h1>
-            <p class="ae-theta rk-portfolio-category ">{{currentItem.categoria}}</p>
+            <h1 class="ae-u-bolder rk-portfolio-title title-item-bryan">{{currentItem?.producto}}</h1>
+            <p class="ae-theta rk-portfolio-category detail-item-bryan">{{currentItem.categoria}}</p>
         </div>
     </header>
     <div class="ae-container-fluid">
