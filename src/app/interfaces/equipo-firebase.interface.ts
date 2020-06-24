@@ -1,4 +1,4 @@
-export class equipoFirebase {
+export class EquipoFirebase {
   frase: string;
   nombre: string;
   subtitulo: string;

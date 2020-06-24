@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 
 import { InfoPagina } from '../interfaces/info-pagina.interface';
-import { equipoFirebase } from '../interfaces/equipo-firebase.interface';
+import { EquipoFirebase } from '../interfaces/equipo-firebase.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +17,7 @@ export class InfoPaginaService {
   public info: InfoPagina = new InfoPagina();
   public cargada: boolean = false;
   // Equipo
-  public equipo: equipoFirebase[] = [];
+  public equipo: EquipoFirebase[] = [];
   public cargadoEquipo: boolean = false;
 
   // Constants
@@ -43,7 +43,7 @@ export class InfoPaginaService {
 
   private cargarEquipo() {
     this.http.get(this.urlFirebase)
-      .subscribe((resp: equipoFirebase[]) => {
+      .subscribe((resp: EquipoFirebase[]) => {
 
         this.cargadoEquipo = true;
 
