@@ -29,4 +29,8 @@ export class ProductosService {
         }, 250);
       });
   }
+
+  public getProducto(producto: string) {
+    return this.http.get(`https://udemyangular-38e59.firebaseio.com/productos/${producto}.json`);
+  }
 }

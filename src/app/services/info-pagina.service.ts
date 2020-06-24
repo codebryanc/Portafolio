@@ -14,7 +14,7 @@ export class InfoPaginaService {
   private urlFirebase = 'https://udemyangular-38e59.firebaseio.com/equipo.json';
 
   // Info
-  public info: InfoPagina = new InfoPagina();
+  public info: InfoPagina;
   public cargada: boolean = false;
   // Equipo
   public equipo: EquipoFirebase[] = [];
@@ -52,7 +52,4 @@ export class InfoPaginaService {
         console.log(resp);
     });
   }
-
-  // Functions
-
 }

@@ -1,4 +1,4 @@
-export class EquipoFirebase {
+export interface EquipoFirebase {
   frase: string;
   nombre: string;
   subtitulo: string;
