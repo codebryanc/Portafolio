@@ -9,8 +9,6 @@ import { ProductosService } from '../../services/productos.service';
 })
 export class SearchComponent implements OnInit {
 
-  private termino: string = '';
-
   constructor(private route: ActivatedRoute,
     public productosService: ProductosService) { }
 

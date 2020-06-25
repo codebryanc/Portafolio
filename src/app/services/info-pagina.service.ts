@@ -16,6 +16,7 @@ export class InfoPaginaService {
   // Info
   public info: InfoPagina;
   public cargada: boolean = false;
+  
   // Equipo
   public equipo: EquipoFirebase[] = [];
   public cargadoEquipo: boolean = false;
